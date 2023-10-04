@@ -1,0 +1,64 @@
+h1 {
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+h2 {
+    width: 500px;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+.ohje {
+    width: 510px;
+}
+
+#noppakuva {
+    width: 100px;
+}
+
+#sikakuva {
+    width: 100px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    padding: 10px;
+}
+
+#playerList {
+    width: 490;
+    font-size: 20px; /* Lisää fontin koko */
+    background-color: antiquewhite; /* Lisää taustaväri HEX-koodina */
+    padding: 10px; /* Lisää tilaa elementin ympärille */
+    border: 2px solid #ffcc99; /* Lisää reunus */
+  }
+#currentPlayer {
+    width: 490px;
+    font-size: 20px;
+}
+
+#game {
+    width: 510px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+.element {
+    width: 510px;
+    border-bottom: 6px solid red; /* 3 pikselin paksuinen punainen viiva */
+}
+
+#result {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-weight: bold;
+}
+
+#ohje {
+    width: 510px;
+    padding: 10px;
+}
