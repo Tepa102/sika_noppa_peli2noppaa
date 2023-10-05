@@ -65,7 +65,7 @@ function rollDice() {
     if (roll1 === 1 && roll2 === 1) {
         // Jos heittää 1 ja 1, lisää 25 pistettä
         currentTurnScore += 25;
-        resultElement.textContent = `${players[currentPlayer].name} heitti 1 ja 1 ja sai 25 pistettä.`;
+        resultElement.textContent = `${players[currentPlayer].name} heitti 1 ja 1 ja sai 25 pistettä ja vuoron pisteet ovat nyt ${currentTurnScore}.`;
     } else if (roll1 === roll2 && roll1 === 1) {
         // Jos heittää kolme peräkkäistä tuplaheittoa, menettää vuoron ja pisteet
         currentTurnScore = 0;
@@ -78,7 +78,7 @@ function rollDice() {
         endTurn();
     } else if (roll1 === roll2) {
         currentTurnScore = (roll1 + roll2) 
-        resultElement.textContent = `${players[currentPlayer].name} heitti ${roll1} ja ${roll2} ja sai ${currentTurnScore *2}.`;
+        resultElement.textContent = `${players[currentPlayer].name} heitti ${roll1} ja ${roll2} ja sai ${currentTurnScore *2} ja vuoron pisteet ovat nyt ${currentTurnScore}.`;
     } else {
         currentTurnScore += roll1 + roll2;
         resultElement.textContent = `${players[currentPlayer].name} heitti ${roll1} ja ${roll2},
