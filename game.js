@@ -77,8 +77,8 @@ function rollDice() {
         resultElement.textContent = `${players[currentPlayer].name} heitti ${roll1} ja ${roll2} ja menetti pisteitä.`;
         endTurn();
     } else if (roll1 === roll2) {
-        currentTurnScore = (roll1 + roll2) 
-        resultElement.textContent = `${players[currentPlayer].name} heitti ${roll1} ja ${roll2} ja sai ${currentTurnScore *2} ja vuoron pisteet ovat nyt ${currentTurnScore}.`;
+        currentTurnScore = (roll1 + roll2)*2; 
+        resultElement.textContent = `${players[currentPlayer].name} heitti ${roll1} ja ${roll2} ja sai ${currentTurnScore} ja vuoron pisteet ovat nyt ${currentTurnScore}.`;
     } else {
         currentTurnScore += roll1 + roll2;
         resultElement.textContent = `${players[currentPlayer].name} heitti ${roll1} ja ${roll2},
