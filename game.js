@@ -22,8 +22,8 @@ function initializeGame() {
 
   playerCount = parseInt(document.getElementById("playerCount").value);
 
-  if (playerCount < 2 || playerCount > 4) {
-    alert("Pelaajien määrän tulee olla 2-4.");
+  if (playerCount < 2 || playerCount > 6) {
+    alert("Pelaajien määrän tulee olla 2-6.");
     return;
   }
 
