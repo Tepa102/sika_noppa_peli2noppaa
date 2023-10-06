@@ -50,7 +50,7 @@ label {
 }
 
 #game {
-    width: 510px;
+    max-width: 510px;
     padding: 10px;
     background-color: antiquewhite;
 }
@@ -81,3 +81,4 @@ label {
       margin: 0 10px; /* Pieni marginaali sivuilla */
     }
   }
+
