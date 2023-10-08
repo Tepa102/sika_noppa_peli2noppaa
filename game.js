@@ -8,7 +8,7 @@ let consecutiveDoublePairs = 0; // Tässä seurataan peräkkäisiä tuplaheittoj
 let playerScore = 0; // Pelaajan pisteet
 
 function updateCurrentPlayer() {
-  document.getElementById("currentPlayer").textContent = ` ${players[currentPlayer].name}`;
+  document.getElementById("currentPlayer").innerHTML = `<strong> ${players[currentPlayer].name}</strong>`;
 }
 
 function initializeGame() {
@@ -47,7 +47,7 @@ function updatePlayerList() {
   playerList.innerHTML = "";
   players.forEach(player => {
     let li = document.createElement("li");
-    li.textContent = `${player.name}: ${player.score} pistettä`;
+    li.innerHTML = `<strong>${player.name}:</strong> ${player.score} pistettä`;
     playerList.appendChild(li);
     console.log("pelaajien pisteet " + li.textContent)
   });
