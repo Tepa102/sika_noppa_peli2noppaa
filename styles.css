@@ -5,19 +5,24 @@ h1 {
 }
 
 h2 {
-    width: 500px;
+    max-width: 500px;
     background-color: antiquewhite;
     padding: 10px;
+}
+
+h3 {
+    max-width: 510px;
+    width: 100%;
 }
 
 h6 {
     font-size: large;
     font-weight: bold;
     padding: 0 10px;
-    
+
 }
 .ohje {
-    width: 510px;
+    max-width: 510px;
 }
 
 #noppakuva {
@@ -85,4 +90,9 @@ label {
 
     #noppaImage #noppaImage2 {
         width: 50px;
+    }
+
+    h3 {
+        max-width: 510px;
+        width: 100%;
     }
