@@ -61,6 +61,7 @@ label {
 }
 
 #result {
+    font-size: medium;
     word-wrap: break-word;
     overflow-wrap: break-word;
     font-weight: bold;
@@ -73,12 +74,15 @@ label {
 }
 
 /* Media query puhelimille ja muille pienille näytöille */
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     p {
-      font-size: 14px; /* Pienempi fonttikoko pienempien näyttöjen vuoksi */
+      font-size: 12px; /* Pienempi fonttikoko pienempien näyttöjen vuoksi */
       line-height: 1.3; /* Pienempi riviväli paremman luetettavuuden vuoksi */
       text-align: left; /* Tekstin tasaus molemmille sivuille */
       margin: 0 10px; /* Pieni marginaali sivuilla */
     }
-  }
+    }
 
+    #noppaImage #noppaImage2 {
+        width: 50px;
+    }
