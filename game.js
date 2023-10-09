@@ -68,30 +68,29 @@ function rollDice() {
   if (roll1 === 1 && roll2 === 1) {
     // Jos heittää 1 ja 1, lisää 25 pistettä
     currentTurnScore += 25;
-    resultElement.textContent = `${players[currentPlayer].name} heitti 1 ja 1 ja sai 25 pistettä 
-    ja vuoron pisteet ovat nyt ${currentTurnScore}.`;
+    resultElement.innerHTML = `${players[currentPlayer].name} heitti 1 ja 1 ja sai 25 pistettä <br>ja vuoron pisteet ovat nyt ${currentTurnScore}.`;
     console.log(resultElement.textContent)
   } else if (roll1 === roll2 && roll1 === 1) {
     // Jos heittää kolme peräkkäistä tuplaheittoa, menettää vuoron ja pisteet
     currentTurnScore = 0;
-    resultElement.textContent = `${players[currentPlayer].name} heitti ${roll1} ja ${roll2} ja menetti pisteitä.`;
+    resultElement.innerHTML = `${players[currentPlayer].name} heitti ${roll1} ja ${roll2} <br>ja menetti pisteitä.`;
     console.log(resultElement.textContent)
     endTurn();
   } else if (roll1 === 1 || roll2 === 1) {
     // Jos toinen noppa näyttää 1, siirry seuraavalle pelaajalle ja nollaa kierroksen pisteet
     currentTurnScore = 0;
-    resultElement.textContent = `${players[currentPlayer].name} heitti ${roll1} ja ${roll2} ja menetti pisteitä.`;
+    resultElement.innerHTML = `${players[currentPlayer].name} heitti ${roll1} ja ${roll2} <br>ja menetti pisteitä.`;
     console.log(resultElement.textContent)
     endTurn();
   } else if (roll1 === roll2) {
     currentTurnScore += (roll1 + roll2) * 2;
-    resultElement.textContent = `${players[currentPlayer].name} heitti ${roll1} ja ${roll2} ja sai ${(roll1 + roll2) * 2} 
-    ja vuoron pisteet ovat nyt ${currentTurnScore}.`;
+    resultElement.innerHTML = `${players[currentPlayer].name} heitti ${roll1} ja ${roll2} ja sai ${(roll1 + roll2) * 2} 
+    <br>ja vuoron pisteet ovat nyt ${currentTurnScore}.`;
     console.log(resultElement.textContent)
   } else {
     currentTurnScore += roll1 + roll2;
-    resultElement.textContent = `${players[currentPlayer].name} heitti ${roll1} ja ${roll2}, ja sai ${roll1 + roll2}
-        ja vuoron pisteet ovat nyt ${currentTurnScore}.`;
+    resultElement.innerHTML = `${players[currentPlayer].name} heitti ${roll1} ja ${roll2}, ja sai ${roll1 + roll2}
+    <br>ja vuoron pisteet ovat nyt ${currentTurnScore}.`;
     console.log(resultElement.textContent)
   }
 
@@ -125,7 +124,7 @@ function endTurn() {
   currentTurnScore = 0; // Nollataan vuoron pisteet
 
   if (players[currentPlayer].score >= 100) {
-    document.getElementById("voitto").textContent = `${players[currentPlayer].name} voitti! Onneksi olkoon!`;
+    document.getElementById("voitto").innerHTML = `${players[currentPlayer].name} voitti!<br>Onneksi olkoon!`;
     document.querySelector("button").disabled = true; // Estä heittämisen lopettaminen voiton jälkeen
     updatePlayerList(); // Päivitä pelaajien pisteet
 
