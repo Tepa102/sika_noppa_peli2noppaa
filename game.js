@@ -125,7 +125,7 @@ function endTurn() {
   currentTurnScore = 0; // Nollataan vuoron pisteet
 
   if (players[currentPlayer].score >= 100) {
-    document.getElementById("result").textContent = `${players[currentPlayer].name} voitti! Onneksi olkoon!`;
+    document.getElementById("voitto").textContent = `${players[currentPlayer].name} voitti! Onneksi olkoon!`;
     document.querySelector("button").disabled = true; // Estä heittämisen lopettaminen voiton jälkeen
     updatePlayerList(); // Päivitä pelaajien pisteet
 

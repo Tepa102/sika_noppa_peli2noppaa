@@ -76,6 +76,14 @@ ul {
     font-weight: bold;
 }
 
+#voitto {
+    font-size: 1.5em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-weight: bold;
+    color:rgb(170, 42, 187)
+}
+
 #ohje {
     max-width: 510px;
     width: 100%;
