@@ -10,7 +10,7 @@ h2 {
     padding: 10px;
 }
 
-h3 {
+h3.element {
     max-width: 510px;
     width: 100%;
 }
@@ -65,6 +65,10 @@ label {
     border-bottom: 6px solid red; /* 3 pikselin paksuinen punainen viiva */
 }
 
+ul {
+    list-style-type: none;
+  }
+  
 #result {
     font-size: medium;
     word-wrap: break-word;
@@ -76,6 +80,7 @@ label {
     max-width: 510px;
     width: 100%;
     padding: 0 20px 0 10px;
+    margin: 0 0 0 10px;
 }
 
 /* Media query puhelimille ja muille pienille näytöille */
@@ -92,7 +97,3 @@ label {
         width: 50px;
     }
 
-    h3 {
-        max-width: 510px;
-        width: 100%;
-    }
